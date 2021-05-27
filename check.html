@@ -1,1 +1,1410 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>website</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="check.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.4/superfish.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	html { background-color: #f0f3f4; }
+body, html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #666666;
+    font-weight:500;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.53846154;
+    
+}
+:focus { outline: 0 none !important; }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color:#272727
+}
+h1 { font-size: 30px; }
+h2 { font-size: 24px; }
+h3 { font-size: 16px; }
+h4 { font-size: 14px; }
+h5 { font-size: 12px; }
+h6 { font-size: 10px; }
+h3, h4, h5 {
+    margin-top: 5px;
+    font-weight: 600;
+}
+p, blockquote { margin: 20px 0; }
+strong { font-weight: 600; }
+a {
+    color: #363f44;
+    cursor: pointer;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -ms-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+    transition: All 0.5s ease;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #141719;
+    text-decoration: none !important;
+}
+label { font-weight: normal; }
+small, .small { font-size: 13px; }
+ul { padding-left:0; }
+.container { max-width: 100%; }
+/* Header */  
+.navbar {
+    border-radous:0;
+    border:0;
+    margin:0;
+}
+.header-inner {
+    width: 100%;
+    position: reltive;
+    z-index: 999;
+    background-color: #2275b7;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(0, 0, 0, 0.06);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: a;
+    ;
+2s; /* For Safari 3.1 to 6.0 */
+    transition: all 2s;
+}
+.top-line {
+    padding: 10px 0;
+    background: #2196f3;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+.top-line p, .top-line a {
+    color: #ffffff;
+    margin: 0;
+}
+.top-line p span { margin-right: 20px; }
+.top-line p span i {
+    font-size: 13px;
+    color:#ffc107;
+    margin-right: 10px;
+}
+.top-line ul.social-icons {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.top-line ul.social-icons li {
+    display: inline-block;
+    margin-left: 9px;
+}
+.top-line ul.social-icons li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    color: #ffffff;
+}
+.top-line ul.social-icons li a:hover { color: #ffba00; }
+header.active .top-line {
+    height: 0;
+    padding: 0;
+}
+/*** Brand logo ***/
+
+.brand {
+    width: 200px;
+    height: 90px;
+}
+.brand a { display:block }
+.brand, .header-inner .main-nav {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*** Main Nav Menu ***/
+.main-nav {
+    text-align: right;
+    white-space: nowrap;
+    padding: 0 0 0 30px;
+    width:100%;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav .sf-menu li { position: relative; }
+.main-nav .sf-menu li:hover, .sf-menu li.sfHover {
+    -webkit-transition: none;
+    transition: none;
+}
+.main-nav .sf-menu li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 90px;
+    padding: 0 7px;
+    position: relative;
+    text-transform: capitalize;
+}
+.main-nav .sf-menu li.current a { color: #fff; }
+.main-nav .sf-menu li.current ul a { color: #fff; }
+.main-nav .sf-menu li ul li.current a { color: #fff; }
+.main-nav .sf-menu ul {
+    background-color: #fff;
+    position: absolute;
+    z-index: 6000;
+    display: none;
+    min-width: 12em; /* allow long menu items to determine submenu width */
+ *width: 12em; /* no auto sub width for IE7, see white-space comment below */
+    top: 99%;
+    left: 0;
+    z-index: 99;
+    margin: 1px 0;
+    padding: 0;
+    border-top: solid 2px #c44741;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+}
+.main-nav .sf-menu > li { display: inline-block; }
+.main-nav .sf-menu li:hover > ul, .main-nav .sf-menu li.sfHover > ul { display: block; }
+.main-nav .sf-menu a {
+    display: block;
+    position: relative;
+}
+.main-nav .sf-menu a:hover { color: #c44741; }
+.main-nav .sf-menu ul li {
+    width: 180px;
+    background: #fff;
+    text-align: left;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+}
+.main-nav .sf-menu ul li a {
+    padding: 10px 15px;
+    font-size: 13px;
+}
+.main-nav .sf-menu ul ul {
+    top: 0;
+    left: 100%;
+}
+.main-nav .sf-menu ul ul li {
+    background: #fff;
+    border-left: solid 1px #eee;
+}
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul { padding-right: 2.5em; *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+.sf-arrows > li > .sf-with-ul:focus:after, .sf-arrows > li:hover > .sf-with-ul:after, .sf-arrows > .sfHover > .sf-with-ul:after { border-top-color: white; /* IE8 fallback colour */ }
+.sf-arrows ul li > .sf-with-ul:focus:after, .sf-arrows ul li:hover > .sf-with-ul:after, .sf-arrows ul .sfHover > .sf-with-ul:after { border-left-color: #999; }
+.header-inner #toggle-btn {
+    cursor: pointer;
+    font-size: 17px;
+    height: 45px;
+    line-height: 45px;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    top: 20px;
+    width: 45px;
+}
+.btn{
+    background-color: #ffc107;
+    border-radius: 30px;
+}
+.brand h1{
+    color: #fff;
+}
+.header-inner .toggle-subarrow { display: none; }
+ @media (min-width: 768px) {
+ .header-inner #toggle-btn {
+ display: none;
+}
+}
+ @media (max-width: 768px) {
+ .navbar-brand {
+ display: block;
+}
+ .navbar {
+ max-height: none;
+}
+.main-nav {
+ margin-top: 10px;
+ height: auto;
+}
+.sf-menu > li {
+ float: none;
+}
+.sf-menu li a {
+ padding: 10px 13px;
+ font-weight: 400;
+}
+ .sf-menu li a:hover, .sf-menu li.sfHover a:hover {
+ color: #c44741;
+}
+ .sf-menu ul {
+ font-size: 14px;
+ display: block;
+ position: static !important;
+ border: 0;
+ box-shadow: 0 0 0 0;
+ -moz-box-shadow: 0 0 0 0;
+ -webkit-box-shadow: 0 0 0 0;
+}
+}
+ @media only screen and (max-width: 768px) {
+ .header-inner .main-nav {
+ display: block;
+ margin: 0;
+}
+ #toggle-btn {
+ display: block;
+}
+ .toggle-subarrow {
+ display: block !important;
+ cursor: pointer;
+ position: absolute;
+ right: 0;
+ top: 0;
+ width: 45px;
+ height: 42px;
+ border-left: 1px solid #e8e8e8;
+ text-align: center;
+ color: #777;
+}
+ .toggle-subarrow .fa {
+ margin-top:14px;
+}
+ .main-nav {
+ text-align: left;
+ white-space: nowrap;
+ padding: 0;
+}
+ .sf-menu {
+ display: none;
+}
+ .main-nav .sf-menu {
+ margin: 0 -15px;
+}
+ .main-nav .sf-menu > li {
+ font-size: 13px;
+ line-height: 16px;
+ display: block;
+ border-top: 1px solid #F96
+}
+ .main-nav .sf-menu li a {
+ color: #fff;
+ padding: 20px;
+ line-height:0px;
+ display: block;
+ position: relative;
+ background-color:#08991C;
+ text-align:center
+}
+ .main-nav .sf-menu ul {
+border: none;
+}
+ .main-nav .sf-menu ul li {
+ width: 100%;
+ margin-left: 30px;
+ font-size: 13px;
+ line-height: 16px;
+ font-weight: 400;
+ position: relative;
+ border:none;
+ border-top: 1px solid #e8e8e8;
+}
+ .sf-menu ul {
+ position:static!important;
+ display: none!important;
+}
+ .mob-drop ul {
+ display: block!important;
+}
+   @media(min-width: 601px) and (max-width: 780px) {
+.top-line .container {
+ max-width:70%;
+}
+ .top-line p span {
+ display: table;
+ margin-right: 20px;
+ text-align: left;
+}
+}
+html,body {
+  height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+  background:#FFF;
+  -webkit-font-smoothing: antialiased;
+}
+a:hover{text-decoration: none;}
+
+
+/* Globals type styling */
+
+h1,h2,h3,h4,h5,h6,p,label,.btn,a{
+    font-family:"Open Sans", sans-serif;
+  color: #333;
+} 
+
+/* NavBar */
+
+#nav-bloc {
+  margin-top: 30px;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+.navbar-brand img{
+    width: auto;
+    max-height: 40px;
+    margin: -12px 5px 0 0;
+}
+.navbar-brand{
+    padding: 15px 15px;
+}
+.navbar .nav{
+    padding-top: 2px;
+    margin-right: -16px;
+    float:right;
+}
+.nav > li{
+    float: left;
+    margin-top: 4px;
+    font-size: 16px;
+}
+.nav > li a:hover{
+    background:transparent;
+}
+.navbar-toggle{
+    margin: 12px;
+    border: 0px;
+}
+.navbar-toggle:hover{
+    background:transparent!important;
+}
+.navbar-toggle .icon-bar{
+    background-color: rgba(0,0,0,.5);
+    width: 26px;
+}
+.navbar-collapse.in {
+overflow-y: visible;
+float: left;
+width: 100%;
+}
+.navbar-1 {
+  float: right;
+}
+.site-navigation:first-child {
+  float: left;
+}
+.site-navigation:nth-child(2) {
+  float: right;
+}
+.site-navigation:nth-child(2) a {
+  color: #ccc;
+  font-size: 85%;
+  padding-right: 0px;
+}
+
+.site-navigation .nav > .active{
+  color: #333;
+}
+.carosel_div{
+    height: 400px !important;
+    background-color: #2196f3;
+}
+
+.carousel-inner {
+    height: 400px !important;
+}
+div#carousel-example {
+    height: 400px !important;
+}
+#carousel-example .carousel-caption {
+    padding: 112px !important;
+}
+.carousel-caption button{
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 30px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.carousel-inner .item{
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		.carousel-inner {
+    height: 400px !important;
+}
+div#carousel-example {
+    height: 400px !important;
+    background-color: #2196f3;
+    z-index: 99;
+}
+.carousel-indicators{
+	display: none;
+}
+#carousel-example .carousel-caption {
+    padding: 162px !important;
+}
+#carousel-example .carousel-caption {
+    padding: 112px !important;
+}
+.carousel-caption p{
+	padding-left: 112px;
+	padding-right: 112px;
+}
+.carousel-caption button{
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 30px;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.carousel-inner .item{
+    height: 400px;
+}
+.carousel-caption h3{
+	color: #fff;
+
+}
+.rowx{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	    position: absolute;
+    top: 481px;
+    z-index: 9999999;
+    
+}
+.rowx .col-xs-3{
+	padding: 24px 63px 24px 60px;
+	    box-shadow: 10px 0px 10px 10px #666;
+	    width: 21%;
+	    margin-left: 42px;
+	    background-color: #fff;
+}
+.rowx .col-xs-3 i{
+	color: orange;
+}
+.rowx .col-xs-3 h3{
+	color: #2196f3;
+}
+.about_div{
+	margin-top: 300px;
+	padding: 35px 170px 14px 170px;
+}
+.about_div h3{
+	text-align: center;
+	font-size: 18px;
+}
+.about_div p{
+	text-align: center;
+	line-height: 2;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+}
+.about_div .row p{
+	text-align: left;
+	font-size: 14px;
+	color: #000;
+}
+.about_div .row .col-xs-6 ul li{
+	list-style: none;
+}
+.about_div .row .col-xs-6 button{
+	    padding: 10px 24px 10px 24px;
+    font-size: 14px;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+}
+.about_div{
+	background-image: url('img/download.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.col-txt {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.row_img img{
+	padding: 17px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.row_img {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+video{
+	       width: 100%;
+    height: 695px;
+}
+.col_video{
+	background-color: #000;
+	padding: 0px;
+}
+.wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+.panel {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #fff;
+  background: none;
+  box-shadow: none;
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+  margin-bottom: 7px !important;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.panel-title a {
+  display: block;
+  color: #2196f3;
+  padding: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.panel-body {
+  background: #fff;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  transition: border-radius linear 0s;
+}
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+  content: '\e146';
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  font-size: 24px;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.panel-heading.active a:before {
+  content: ' ';
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+#bs-collapse .panel-heading a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+  content: '\e909';
+  transform: scale(1);
+  transition: all 0.5s;
+}
+/* #accordion rotate icon option */
+
+#accordion .panel-heading a:before {
+  content: '\e316';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'Material Icons';
+  right: 5px;
+  top: 10px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+  color: #2196f3;
+}
+
+#accordion .panel-heading.active a:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
+.row-video{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	background: #33adbd26;
+}
+.row_service {
+    padding-top: 140px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align: center;
+}
+.row_service .col-md-6{
+	text-align: left;
+}
+
+.row_service span i{
+	padding-right: 26px;
+	color: #ffa500;
+	margin-left: 30px;
+}
+
+.row_service .col-md-6 h5{
+	padding-left: 77px;
+    line-height: 1.6;
+}
+.row_service h2{
+	color: #2196f3;
+}
+.para {
+    padding: 10px;
+    box-shadow: 1px 1px 3px 1px;
+    margin-bottom: 26px;
+}
+.banner{
+	padding: 100px 70px 100px 70px;
+	
+}
+.banner .row h2{
+	line-height: 2;
+	color: #fff;
+}
+.banner {
+	background-image: url('img/banner_img.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.banner .row h3{
+	line-height: 1.6;
+	color: #fff;
+}
+.banner .row button{
+	border-radius: 30px;
+	border:1px solid orange;
+	color: #fff;
+	    margin-right: 163px;
+    margin-top: 77px;
+    padding: 10px 30px 10px 30px;
+    background:transparent;
+}
+.banner .row .banner_col{
+	text-align: right;
+}
+.Portfolio .row{
+	width: 80%;
+	margin: 0 auto;
+}
+.Portfolio .row .col-md-6{
+	padding: 18px;
+}
+.Portfolio .row img {
+    width: 100%;
+    height: 317px;
+    margin: 10px;
+}
+.Portfolio  h2{
+	line-height: 2;
+	margin-top: 80px;
+	color: #2196f3;
+	}
+
+	.Portfolio h3{
+	    padding-left: 170px;
+    padding-right: 170px;
+	line-height: 1.6;
+	}
+	.profile_row {
+    background-color: #e0f3f5;
+}
+	.profile_row .row{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.profile_row  h2{
+	line-height: 2;
+	margin-top: 80px;
+	color: #2196f3;
+	}
+	.profile_row h3{
+	    padding-left: 170px;
+    padding-right: 170px;
+	line-height: 1.6;
+	}
+	.media-object{
+		border-radius: 50%;
+		height: 90px;
+	}
+	.media-body{
+		padding-left: 17px;
+	}
+	.media-body h4{
+		color: #2196f3;
+	}
+	.media-body p{
+		margin: 0px;
+	}
+	.media-body hr{
+		margin-left: 0px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.prof {
+    box-shadow: 1px 1px 3px 1px;
+    margin-bottom: 25px;
+    padding: 48px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin-top: 15px;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #2196f3;
+    text-decoration: none;
+    margin-right: 20px;
+    border: 1px solid #2196f3;
+    border-radius: 50%;
+    padding: 5px;
+    background: #e0f3f5;
+}
+.fa{
+	    width: 13px;
+    padding-left: 1px;
+}
+.pricing_row .row{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.pricing_row  h2{
+	line-height: 2;
+	margin-top: 80px;
+	color: #2196f3;
+	}
+	.pricing_row h3{
+	    padding-left: 170px;
+    padding-right: 170px;
+	line-height: 1.6;
+	}
+	.pricing_row h4 {
+    background: #ccc;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #2196f3;
+}
+ .pricing_row ul{
+ 	text-align: center;
+ } 
+ .pricing_row ul li{
+ 	line-height: 1.9;
+ }
+ 
+ .btnp {
+    background: #ccc;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+</style>
+
+</head>
+<body>
+		 
+ <header class="site-header"> 
+ 	<nav class="navbar navbar-default">
+<div class="top-line">
+		<div class="container">
+				<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+								<p> <span><i class="fa fa-envelope-o"></i><a href="mailto:">info@Example.com</a></span> 
+								<span><i class="fa fa-mobile"></i><a href="tel:55488">+1 5589 55488 55</a></span> 
+								</p>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6 text-right">
+								<p> <span><button class="btn">Get Started</button></span> </p>
+						</div>
+				</div>
+		</div>
+</div>
+<div class="header-inner">
+		<div class="container">
+				<div class="row">
+						<div class="col-md-12">
+								<div class="brand"> <a href="#">
+										<h1>ANYAR</h1>
+										</a> </div>
+								<nav  id="nav-wrap" class="main-nav"> <a id="toggle-btn" href="#"><i class="fa fa-bars"></i> </a>
+								<ul class="sf-menu">
+										<li class="current"> <a href="index.html">Home</a> </li>
+										<li> <a href="about-us.html">About Us </a></li>
+										<li> <a href="products.html">Services</a></li>
+										<li> <a href="exports.html">Portfolio</a></li>
+										<li> <a href="clients.html">Team</a> </li>
+										<li> <a href="contact.html">Pricing</a> </li>
+										<li> <a href="contact.html">Blog</a> </li>
+										<li> <a href="contact.html">Drop Down</a></li>
+										<li> <a href="contact.html">Contact</a> </li>
+										
+								</ul>
+								</nav> </div>
+				</div>
+		</div>
+</div>
+</nav>
+
+</header>
+
+<div class="carosel_div">
+	
+</div>
+<!-- /// carousel// -->
+
+
+   
+<div id="carousel-example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example" data-slide-to="1"></li>
+    <li data-target="#carousel-example" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src=""></a>
+      <div class="carousel-caption">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src=""></a>
+      <div class="carousel-caption">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+        <button>Read More</button>
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src=""></a>
+      <div class="carousel-caption">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<div class="row rowx">
+	<div class="col-xs-3">
+		<i class="fa fa-circle"></i>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+	</div>
+	<div class="col-xs-3">
+		<i class="fa fa-circle"></i>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+	</div>
+	<div class="col-xs-3">
+		<i class="fa fa-circle"></i>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+	</div>
+	<div class="col-xs-3">
+		<i class="fa fa-circle"></i>
+		<h3>Lorem Ipsum</h3>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+	</div>
+</div>
+
+<div class="about_div">
+	<h3>ABOUT US </h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+	<div class="row">
+		<div class="col-xs-6">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+			<ul>
+				<i class="far fa-check-double"></i><li>Lorem Ipsum is simply dummy text </li>
+				<i class="far fa-check-double"></i><li>Lorem Ipsum is simply dummy text </li>
+				<i class="far fa-check-double"></i><li>Lorem Ipsum is simply dummy text </li>
+			</ul>
+		</div>
+		<div class="col-xs-6">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+			<button>Learn More</button>
+		</div>
+	</div>
+
+
+</div>
+
+
+	<div class="row row_img">
+		<div class="col-md-2">
+			<img src="img/images5.png">
+		</div>
+		<div class="col-md-2">
+			<img src="img/images2.png">
+		</div>
+		<div class="col-md-2">
+			<img src="img/images5.png">
+		</div>
+		<div class="col-md-2">
+			<img src="img/images4.png">
+		</div>
+		<div class="col-md-2">
+			<img src="img/images5.png">
+		</div>
+		<div class="col-md-2">
+			<img src="img/images2.png">
+		</div>
+	</div>
+
+		<div class="row row-video">
+			<div class="col-md-6 col_video">
+				<video controls>
+				  <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.ogv" type="video/ogg">
+				  <source src="http://learn.shayhowe.com/assets/misc/courses/html-css/adding-media/earth.mp4" type="video/mp4">
+				</video>
+			</div>
+		<div class="col-md-6 col-txt">
+				<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </h2><br>
+				<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+
+					 <div class="panel-group wrap" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          01 Collapsible item #1
+        </a>
+      </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+          </div>
+        </div>
+      </div>
+      <!-- end of panel -->
+
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          02 Collapsible item #2
+        </a>
+      </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+          </div>
+        </div>
+      </div>
+      <!-- end of panel -->
+
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          03 Collapsible item #3
+        </a>
+      </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+          </div>
+        </div>
+      </div>
+      <!-- end of panel -->
+
+      <div class="panel">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          04 Collapsible item #4
+        </a>
+      </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+          </div>
+        </div>
+      </div>
+      <!-- end of panel -->
+
+    </div>
+    <!-- end of #accordion -->
+
+  </div>
+			</div>
+		</div>
+
+
+		<div class="row_service">
+			<h2>SERVICES</h2>
+			<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.hen an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-calendar" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-binoculars" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-calendar-o" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+				</div>
+				<div class="col-md-6">
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-bar-chart" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-sun-o" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+					<div class="para">
+					<P>
+						<h2><span><i class="fa fa-archive" aria-hidden="true"></i></span>Lorem Ipsum </h2>
+						<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+					</P></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Call To Action</h2>
+					<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
+				</div>
+				<div class="col-md-6 banner_col">
+					<button>Call To Action</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="Portfolio" style="text-align: center;">
+			<h2>PORTFOLIO</h2>
+			<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.the Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.hen an unknown printer took a galley of type and scrambled it to make a type specimen book.</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="img/pro1.jpg">
+					<img src="img/pro2.jpg">
+					<img src="img/pro3.jpg">
+				</div>
+				<div class="col-md-4">
+					<img src="img/pro4.jpg">
+					<img src="img/pro5.png">
+					<img src="img/pro6.jpg">
+				</div>
+				<div class="col-md-4">
+					<img src="img/pro7.jpg">
+					<img src="img/pro8.jpg">
+					<img src="img/pro9.jpg">
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="profile_row">
+			<h2 style="text-align: center;padding-top: 30px;">TEAM</h2>
+			<h3 style="text-align: center;padding-bottom: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.the Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="prof">
+						<div class="media">
+					    <div class="media-left">
+					      <img src="img/pic1.jpg" class="media-object" style="width:76px">
+					    </div>
+					    <div class="media-body">
+					      <h4 class="media-heading">walter white</h4>
+					      <p>Lorem ipsum dolor sit </p> 
+					      <hr style="width: 100px;">
+					       <p>incididunt ut labore has been the industry's standard dummy text ever since with desktop publishing software</p>
+					       <div class="footer-social-icons">
+    
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+					    </div>
+					  </div>
+					</div>
+
+
+					<div class="prof">
+						<div class="media">
+					    <div class="media-left">
+					      <img src="img/pic2.jpg" class="media-object" style="width:76px">
+					    </div>
+					    <div class="media-body">
+					      <h4 class="media-heading">Amanda white</h4>
+					      <p>Lorem ipsum dolor sit </p> 
+					      <hr style="width: 100px;">
+					       <p>incididunt ut labore has been the industry's standard dummy text ever since with desktop publishing software</p>
+					       <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="prof">
+						<div class="media">
+					    <div class="media-left">
+					      <img src="img/pic3.jpg" class="media-object" style="width:76px">
+					    </div>
+					    <div class="media-body">
+					      <h4 class="media-heading">Sarah Lorel</h4>
+					      <p>Lorem ipsum dolor sit </p> 
+					      <hr style="width: 100px;">
+					       <p>incididunt ut labore has been the industry's standard dummy text ever since with desktop publishing software</p>
+					       <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="prof">
+						<div class="media">
+					    <div class="media-left">
+					      <img src="img/pic4.jpg" class="media-object" style="width:76px">
+					    </div>
+					    <div class="media-body">
+					      <h4 class="media-heading">william rod</h4>
+					      <p>Lorem ipsum dolor sit </p> 
+					      <hr style="width: 100px;">
+					       <p>incididunt ut labore has been the industry's standard dummy text ever since with desktop publishing software</p>
+					       <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pricing_row">
+			<h2 style="text-align: center;padding-top: 30px;">PRICING</h2>
+			<h3 style="text-align: center;padding-bottom: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.the Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</h3>
+
+			<div class="row">
+				<div class="col-md-3">
+					<h4>Free</h4>
+					<ul>
+						<li><span><i>$</i>0</span>/month</li>
+						<li>Lorem Ipsum</li>
+						<li>Lorem Ipsum is</li>
+						<li>Lorem Ipsum is simply</li>
+						<li>Text of the</li>
+						<li>Text of the</li>
+					</ul>
+					<div class="btnp"><button>Buy Now</button></div>
+				</div>
+				<div class="col-md-3">
+					<h4>Business</h4>
+					<ul>
+						<li><span><i>$</i>0</span>/month</li>
+						<li>Lorem Ipsum</li>
+						<li>Lorem Ipsum is</li>
+						<li>Lorem Ipsum is simply</li>
+						<li>Text of the</li>
+						<li>Text of the</li>
+					</ul>
+					<div class="btnp"><button>Buy Now</button></div>
+				</div>
+				<div class="col-md-3">
+					<h4>Developer</h4>
+					<ul>
+						<li><span><i>$</i>0</span>/month</li>
+						<li>Lorem Ipsum</li>
+						<li>Lorem Ipsum is</li>
+						<li>Lorem Ipsum is simply</li>
+						<li>Text of the</li>
+						<li>Text of the</li>
+					</ul>
+					<div class="btnp"><button>Buy Now</button></div>
+				</div>
+				<div class="col-md-3">
+					<h4>Ultimate</h4>
+					<ul>
+						<li><span><i>$</i>0</span>/month</li>
+						<li>Lorem Ipsum</li>
+						<li>Lorem Ipsum is</li>
+						<li>Lorem Ipsum is simply</li>
+						<li>Text of the</li>
+						<li>Text of the</li>
+					</ul>
+					<div class="btnp"><button>Buy Now</button></div>
+				</div>
+			</div>
+			
+		</div>
+
+
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+  $('.collapse.in').prev('.panel-heading').addClass('active');
+  $('#accordion, #bs-collapse')
+    .on('show.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').addClass('active');
+    })
+    .on('hide.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').removeClass('active');
+    });
+});
+</script>
+
+</body>
+</html>
+
+
+
+
